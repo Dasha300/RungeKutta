@@ -1,11 +1,11 @@
 .PHONY: test
 
 CFLAGS=
-TARGET=euler
+TARGET=rungekutta
 SRC=rungekutta.c mainrk.c
 HFILES=runge-kutta.h
 test: $(TARGET)
 	$(TARGET)
 
-euler: $(SRC) $(HFILES)
+rungekutta: $(SRC) $(HFILES)
 	gcc $(CFLAGS) $(SRC) -o $@ 

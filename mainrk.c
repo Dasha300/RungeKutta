@@ -31,7 +31,7 @@ int main()
 	kettlebc_t k;
 	traject_t y;
 	init_traject(&y, TRSIZE);
-    printf("Euler modeler for kettle\n");
+    printf("Runge Kutta modeler for kettle\n");
 	cauchie_kettle(&k);
 	rungeKutta(&k,&y, H, EPS);
 	out_traject(&y);
